@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Welcome!</h1>
+        <p>Hai Sobat, kami akan membantumu dalam berhitung! ;)</p>
+    </header>
+
+    <main>
+        <section class="selection-content">
+            <button href="#" type="button" class="selection-btn Blue1-color" id="segitiga-btn">Segitiga</button>
+            <button href="#" type="button" class="selection-btn Blue2-color" id="jajar-genjang-btn">Jajar Genjang</button>
+            <!--<button href="#" type="button" onclick="tryDOM()" class="selection-btn Blue2-color" id="jajar-genjang-btn">Jajar Genjang</button>-->
+        </section>        
+
+        <!----------Segitiga---------->
+        <section class="main-content">
+            <aside>
+                <header>
+                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                </header>
+                
+                <!----------Gambar Rumus Luas Segitiga---------->
+                <article class="luas-segitiga-content">
+                    <div class="luas-segitiga-img"></div>
+                    <!--<p>Rumus Luas Segitiga</p>-->
+                </article>
+    
+                <hr />
+    
+                <!----------Form Perhitungan atau Kalkulasi Luas Segitiga---------->
+                <form>
+                    <header>
+                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                       <label for="panjang-alas">Panjang Alas:</label>
+                        <input id="panjang-alas" type="number" required />
+                    </div>
+                    <div class="input-wrapper">
+                       <label for="tinggi">Tinggi:</label>
+                        <input id="tinggi" type="number" required />
+                    </div>
+    
+                    <!-----Hasil Kalkulasi----->
+                    <p id="result-luas">Hasil Perhitungan:</p>
+    
+                    <!-----Tombol Hasil dan Reset----->
+                    <button onclick="validateluas()" type="button">Hitung</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </aside>
+    
+            <!----------Dibuat aside agar bersandingan satu sama lain---------->
+
+            <aside>
+                <header>
+                    <h1 class="luas-segitiga-header">Keliling Segitiga</h1>
+                </header>
+    
+                <!----------Gambar Rumus Keliling Segitiga---------->
+                <article class="keliling-segitiga-content">
+                    <div class="keliling-segitiga-img"></div>
+                    <!--<p>Rumus Keliling Segitiga</p>-->
+                </article>
+    
+                <hr />
+    
+                <!----------Form Perhitungan atau Kalkulasi Keliling Segitiga---------->
+                <form>
+                    <header>
+                        <h1 class="keliling-segitiga-form-header">Hitung Keliling Segitiga</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                       <label for="sisi-ke-1">Sisi ke-1:</label>
+                        <input id="sisi-ke-1" type="number" required />
+                    </div>
+                    <div class="input-wrapper">
+                       <label for="sisi-ke-2">Sisi ke-2:</label>
+                        <input id="sisi-ke-2" type="number" required />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="sisi-ke-3">Sisi ke-3:</label>
+                         <input id="sisi-ke-3" type="number" required />
+                     </div>
+    
+                     <!-----Hasil Kalkulasi----->
+                    <p id="result-keliling">Hasil Perhitungan:</p>
+                    
+                    <!-----Tombol Hitung dan Reset----->
+                    <button onclick="validatekeliling()" type="button">Hitung</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </aside>
+        </section>
+
+        <!----------Jajar Genjang---------->
+        <section class="main-content">
+            <aside>
+                <header>
+                    <h1 class="luas-jajar-genjang-header">Luas Jajar Genjang</h1>
+                </header>
+                
+                <!----------Gambar Rumus Luas Jajar Genjang---------->
+                <article class="luas-jajar-genjang-content">
+                    <div class="luas-jajar-genjang-img"></div>
+                    <!--<p>Rumus Luas Jajar Genjang</p>-->
+                </article>
+    
+                <hr />
+    
+                <!----------Form Perhitungan atau Kalkulasi Luas Jajar Genjang---------->
+                <form>
+                    <header>
+                        <h1 class="luas-jajar-genjang-form-header">Hitung Luas Jajar Genjang</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                       <label for="panjang-alas-jg">Panjang Alas:</label>
+                        <input id="panjang-alas-jg" type="number" required />
+                    </div>
+                    <div class="input-wrapper">
+                       <label for="tinggi-jg">Tinggi:</label>
+                        <input id="tinggi-jg" type="number" required />
+                    </div>
+    
+                    <!-----Hasil Kalkulasi----->
+                    <p id="result-luas-jajar-genjang">Hasil Perhitungan:</p>
+    
+                    <!-----Tombol Hasil dan Reset----->
+                    <button onclick="validateluasjg()" type="button">Hitung</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </aside>
+    
+            <!----------Dibuat aside agar bersandingan satu sama lain---------->
+
+            <aside>
+                <header>
+                    <h1 class="luas-jajar-genjang-header">Keliling Jajar Genjang</h1>
+                </header>
+    
+                <!----------Gambar Rumus Keliling Jajar Genjang---------->
+                <article class="keliling-jajar-genjang-content">
+                    <div class="keliling-jajar-genjang-img"></div>
+                    <!--<p>Rumus Keliling Jajar Genjang</p>-->
+                </article>
+    
+                <hr />
+    
+                <!----------Form Perhitungan atau Kalkulasi Keliling Jajar Genjang---------->
+                <form>
+                    <header>
+                        <h1 class="keliling-jajar-genjang-form-header">Hitung Keliling Jajar Genjang</h1>
+                    </header>
+    
+                    <div class="input-wrapper">
+                       <label for="panjang-alas-k-jg">Panjang Alas:</label>
+                        <input id="panjang-alas-k-jg" type="number" required />
+                    </div>
+                    <div class="input-wrapper">
+                       <label for="sisi-miring">Sisi Miring:</label>
+                        <input id="sisi-miring" type="number" required />
+                    </div>
+    
+                     <!-----Hasil Kalkulasi----->
+                    <p id="result-keliling-jg">Hasil Perhitungan:</p>
+                    
+                    <!-----Tombol Hitung dan Reset----->
+                    <button onclick="validatekelilingjg()" type="button">Hitung</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </aside>
+        </section>
+    </main>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
